@@ -33,10 +33,7 @@ class Webshop:
     def age(self,age_new):
         if age_new < 18:
             print('get out of here')
-            self.__age = 18
-            
-        else:
-            self.__age = age_new
+        self.__age = age_new
     
     
     @id.setter
@@ -59,4 +56,4 @@ class Webshop:
 user1 = Webshop(age= 17)
 user2 = Webshop()
 print(Webshop.print_all_information(user1))
-
+print(Webshop.print_all_information(user2))
